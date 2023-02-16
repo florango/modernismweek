@@ -12,15 +12,15 @@
 
  :root {
   /* colors */
-  --link-color: #035fe6;
+  --link-color: #ff9283;
   --link-hover-color: #136ff6;
   --background-color: #fff;
   --overlay-background-color: #eee;
-  --highlight-background-color: #ccc;
+  --highlight-background-color: #fff;
   --text-color: #000;
 
   /* fonts */
-  --body-font-family: 'helvetica neue', helvetica, ubuntu, roboto, noto, sans-serif;
+  --body-font-family: 'Didot', 'helvetica neue', helvetica, ubuntu, roboto, noto, sans-serif;
   --heading-font-family: var(--body-font-family);
   --fixed-font-family: 'Roboto Mono', menlo, consolas, 'Liberation Mono', monospace;
 
@@ -63,7 +63,7 @@ header {
 h1, h2, h3,
 h4, h5, h6 {
   font-family: var(--heading-font-family);
-  font-weight: 600;
+  font-weight: 300;
   line-height: 1.25;
   margin-top: 1em;
   margin-bottom: .5em;
@@ -71,15 +71,23 @@ h4, h5, h6 {
 }
 
 h1 { font-size: var(--heading-font-size-xxl) }
-h2 { font-size: var(--heading-font-size-xl) }
-h3 { font-size: var(--heading-font-size-l) }
-h4 { font-size: var(--heading-font-size-m) }
-h5 { font-size: var(--heading-font-size-s) }
+h2 { font-size: var(--heading-font-size-l) }
+h3 { font-size: var(--heading-font-size-m) }
+h4 { font-size: var(--heading-font-size-s) }
+h5 { font-size: var(--heading-font-size-xs) }
 h6 { font-size: var(--heading-font-size-xs) }
 
 p, dl, ol, ul, pre, blockquote {
   margin-top: 1em;
   margin-bottom: 1em;
+}
+
+h1, h3, h4 {
+  color: #01908a;
+}
+
+h2 {
+  color: #ff7449;
 }
 
 a:any-link {
